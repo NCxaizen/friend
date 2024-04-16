@@ -1,14 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Card from './Card';
+import {data} from './Data';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <h1>hello</h1>
-    <App />
+  <div>
+    <Card id={data[0].id} name={data[0].name} profession={data[0].profession}/>
+    <Card id={data[1].id} name={data[1].name} profession={data[1].profession}/>
+    <Card id={data[2].id} name={data[2].name} profession={data[2].profession}/>
+  </div>
+  
   </React.StrictMode>
 );
 
