@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Card from './Card';
+import CardList from './CardList';
 import {data} from './Data';
 import reportWebVitals from './reportWebVitals';
 
@@ -9,9 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
   <div>
-    <Card id={data[0].id} name={data[0].name} profession={data[0].profession}/>
-    <Card id={data[1].id} name={data[1].name} profession={data[1].profession}/>
-    <Card id={data[2].id} name={data[2].name} profession={data[2].profession}/>
+    <CardList data={data}/>
   </div>
   
   </React.StrictMode>
